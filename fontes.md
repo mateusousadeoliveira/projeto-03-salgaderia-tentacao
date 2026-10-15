@@ -1,0 +1,1 @@
+Imagem da coxinha: https://cozinha365.com.br/wp-content/uploads/2025/02/Coxinha-de-Frango-Tradicional-S-1024x1024.webp
