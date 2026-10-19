@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salgaderia Tentação</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Salgaderia Tentação</h1>
+
+        <button class="sloga">Sabor que chama de volta</button>
+        <h1 id="inicio">Salgaderia Tentação</h1>
         <p>Salgados quentinhos, pizzas e bebidas para deixar seu dia mais gostoso</p>
 
         <nav>   <ins><a>Destaques</a></inS>
@@ -18,34 +21,45 @@
     </header>
 
     <main>
-        <h2>Uma tentação em cada mordida</h2>
-        <p>Na nossa lanchonete você encontra salgados preparados todos os dias, pizzas individuas e aquele combo rápido para dividir com os amigos</p>
-        <button><ins>Ver cardápio</ins></button>
-        <br>
+        <section class="introducao">
+            <h2>Uma tentação em cada mordida</h2>
+            <p>Na nossa lanchonete você encontra salgados preparados todos os dias, pizzas individuas e aquele combo rápido para dividir com os amigos</p>
+            <a href="#cardapio"><button><ins>Ver cardápio</ins></button> </a>
+            <br>
+        </section>
 
+
+        
         <h2>Mais pedidos</h2>
+        <section class="destaques">
+            
+            <figure class="imagem">
+                <img src="https://cozinha365.com.br/wp-content/uploads/2025/02/Coxinha-de-Frango-Tradicional-S-1024x1024.webp"  class="pedidos">
+                <figcaption>Coxinha de frango</figcaption>
+            </figure>
 
-        <figure>
-            <img src="https://cozinha365.com.br/wp-content/uploads/2025/02/Coxinha-de-Frango-Tradicional-S-1024x1024.webp" width="250" class="pedidos">
-            <figcaption>Coxinha de frango</figcaption>
-        </figure>
+            <figure class="imagem">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWrJYbOevvZ91WlotYzaA36JSvt_htqmK9TicjTpSrUA&s=10" class="pedidos">
+                <figcaption>Pastel de frango</figcaption>
+            </figure>
 
-        <figure>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRhZB3mn7I26h_JZ9z7-dxhScws5dXV5z4a_9s6-iBBSMxqodyOjfk7iM&s=10" width="250" height="250" class="pedidos">
-            <figcaption>Pastel de frango</figcaption>
-        </figure>
+            <figure class="imagem">
+                <img src="https://swiftbr.vteximg.com.br/arquivos/ids/213885/618283-pizza-artesanal-calabresa_inn.jpg?v=639051131497770000" class="pedidos">
+                <figcaption>Pizza de calabresa</figcaption>
 
-        <figure>
-            <img src="https://swiftbr.vteximg.com.br/arquivos/ids/213885/618283-pizza-artesanal-calabresa_inn.jpg?v=639051131497770000" width="250" height="250" class="pedidos">
-            <figcaption>Pizza de calabresa</figcaption>
-        </figure>
+        </section>
 
-        <h2>Nosso cardápio</h2>
-        os ingredientes podem variar conforme a disponibilidade. Em caso de alergia ou restrição alimentar, consulte a equipe antes de consumir.
 
-        <div class="conteiner">
-            <h3>Salgados</h3>
 
+        <h2 id="cardapio">Nosso cardápio</h2>
+        
+        <section class="aviso">
+            <i>os ingredientes podem variar conforme a disponibilidade. Em caso de alergia ou restrição alimentar, consulte a equipe antes de consumir.</i>
+        </section>
+
+        <h3>🥟 Salgados</h3>
+
+        <div class="salgados">
             <section class="cardápio">
                 <h4>Coxinha de frango - R$ 7,00</h4>
                 <p>Massa, frango desfiado e temperos da casa.</p>
@@ -75,9 +89,12 @@
                 <h4>Enroladinho - R$ 6,50</h4>
                 <p>Massa, salsicha e queijo</p>
             </section>
+        </div>
+        <div class="pedidos">
+            
+        <h3>🍕 Pizzas</h3>
 
-            <h3>Pizzas</h3>
-
+        <div class="pizzas">
             <section class="cardápio">
                 <h4>Muçarela - R$ 22,00</h4>
                 <p>Molho de tomate, muçarela, tomate e orégano</p>
@@ -97,9 +114,13 @@
                 <h4>Portuguesa - R$ 27,00</h4>
                 <p>Molho, muçarela, presunto, ovo, cebola e azeitona</p>
             </section>
+        </div>
 
-            <h3>Bebidas</h3>
+            
 
+        <h3>🧃 Bebidas</h3>
+
+        <div class="bebidas">
             <section class="cardápio">
                 <h4>Refrigerante lata - R$ 6,00</h4>
                 <p>350ml</p>
@@ -120,8 +141,12 @@
                 <p>150ml</p>
             </section>
 
-            <h3>Porções e combos</h3>
+        </div>
 
+
+        <h3>🍟 Porções e combos</h3>
+
+        <div class="combos">
             <section class="cardápio">
                 <h4>Batata frita - a partir de R$ 12,00</h4>
                 <p>Pequena: R$ 12,00; grande: R$ 18,00</p>
@@ -135,14 +160,19 @@
             <section class="cardápio">
                 <h4>Combo Tentação - R$12,00</h4>
                 <p>Um salgado tradicional e um refrigerante em lata</p>
-            </section>
+            </section> 
 
-            Os ingredientes podem variar conforme a disponibilidade. Em caso de alergia ou restrição alimentar, consulte a equipe antes de consumir.
+        </div>
+            <section class="aviso">
+                <i>os ingredientes podem variar conforme a disponibilidade. Em caso de alergia ou restrição alimentar, consulte a equipe antes de consumir.</i>
+            </section>
         </div>
 
         <h3>Venha nos visitar</h3>
+
         <h2>Endereço, horários e contato</h2>
-        <div>
+
+        <div class="contatos">
             <section class="dados">
                 <h4>📍Endereço</h4>
                 <p>Alto do Morro da Paz, 67
@@ -172,6 +202,9 @@
     </main>
 
     <footer>
+       <p> <b>Salgaderia Tentação</b> - sabor que te chama de volta</p>
+       <p>Site demonstrativo para atividade escolar. Negócio e dados fictícios.</p>
+       <em><a href="#inicio">Voltar ao início</a></em>
 
     </footer>
     
